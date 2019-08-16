@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompositionBankAccount.ClassLib", "CompositionBankAccount.ClassLib\CompositionBankAccount.ClassLib.csproj", "{6F526386-1066-4373-874C-CF4C8EC93AAD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompositionBankAccount.ClassLib.Tests", "CompositionBankAccount.ClassLib.Tests\CompositionBankAccount.ClassLib.Tests.csproj", "{262C050F-DB8E-4942-9208-E552B1B9747C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{6F526386-1066-4373-874C-CF4C8EC93AAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F526386-1066-4373-874C-CF4C8EC93AAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F526386-1066-4373-874C-CF4C8EC93AAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{262C050F-DB8E-4942-9208-E552B1B9747C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{262C050F-DB8E-4942-9208-E552B1B9747C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{262C050F-DB8E-4942-9208-E552B1B9747C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{262C050F-DB8E-4942-9208-E552B1B9747C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
