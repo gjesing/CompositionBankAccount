@@ -3,7 +3,7 @@ using Xunit;
 
 namespace CompositionBankAccount.ClassLib.Tests
 {
-    public class AccountTest
+    public class AccountTests
     {
         [Fact]
         public void ValidateId_Value0orLessReturnsFalse()
@@ -89,6 +89,30 @@ namespace CompositionBankAccount.ClassLib.Tests
         {
             int expected = 2;
             int actual = new Account(1, 5000, DateTime.Now.AddDays(-expected)).GetDaysSinceCreation();
+            Assert.Equal(expected, actual);
+        }
+        [Fact]
+        public void Id_GetReturnsId()
+        {
+            int expected = 1;
+            int actual = new Account(expected, 5000, DateTime.Now).Id;
+            Assert.Equal(expected, actual);
+        }
+        [Fact]
+        public void Id_InvalidValueThrowsArgumentException()
+        {
+            Assert.Throws<ArgumentException>(() => new Account(0, 5000, DateTime.Now));
+        }
+        [Fact]
+        public void Balance_InvalidValueThrowsArgumentException()
+        {
+            Assert.Throws<ArgumentException>(() => new Account(1, 1000000000, DateTime.Now));
+        }
+        [Fact]
+        public void Created_GetReturnsCreationTime()
+        {
+            DateTime expected = DateTime.Now;
+            DateTime actual = new Account(1, 5000, expected).Created;
             Assert.Equal(expected, actual);
         }
     }
